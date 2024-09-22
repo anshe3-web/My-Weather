@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(font/Satoshi-Variable.ttf) format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+}
+
+html,
+body {
+    color: #f7f7f7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allbck {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #222;
+}
+
+.wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    z-index: 999;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("images/rain-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.container1 {
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(53, 94, 80); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+}
+
+.weatherimg img {
+    width: 40px;
+}
+
+.container1 .inner2 {
+    /* background-color: rgb(100, 57, 100); */
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.cityndtime {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(63, 63, 45); */
+}
+
+.weatherimg {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(63, 63, 45); */
+}
+
+.container1 .inner2 h1 {
+    font-size: 6vw;
+    /* background-color: rgb(89, 64, 64); */
+    font-weight: 600;
+}
+
+.cityndtime h3 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.cityndtime h4 {
+    font-size: 1.2vw;
+}
+
+.weatherimg {
+    padding-left: 1vw;
+}
+
+.flat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flat h4{
+    font-size: 1.02vw;
+}
+.heading {
+    padding-bottom: 2.5vw;
+}
+
+.container2 {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: -1;
+    background-color: #2222225e;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+.details {
+    /* background-color: burlywood; */
+    width: 100%;
+    height: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+}
+
+.btmspace {
+    padding-bottom: 2vw;
+}
+
+.search {
+    /* background-color: rgb(10, 67, 136); */
+    padding-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.search .box1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3vw;
+    align-items: flex-end;
+}
+
+.search .box2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    height: 0.09px;
+    color: #f7f7f7;
+    background-color: #f7f7f7;
+    margin-left: 3vw;
+}
+
+.search img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.search button {
+    cursor: pointer;
+    /* background-color: #413a3a; */
+    background-color: #13161d;
+    border: none;
+    outline: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .box1 input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1vw;
+    color: white!important;
+    text-transform: capitalize;
+}
+::placeholder{
+    color: #f7f7f7;
+    text-transform: capitalize;
+}
+
+.line {
+    width: 100%;
+    height: 0.09px;
+    background-color: #f7f7f7;
+    color: #f7f7f7;
+    margin-top: 1vw;
+}
+.error{
+    display: none;
+}
+.error h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+@media screen and (min-height:800px){
+    .wrapper {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        position: relative;
+        z-index: 999;
+        box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    }
+}

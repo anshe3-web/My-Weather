@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="allbck"></div>
+    <div class="wrapper">
+        <div class="background"></div>
+        <div class="container1">
+            <div class="inner1">
+                <h5>Ansh.Weather</h5>
+            </div>
+            <div class="error">
+                <h3>Invalid City Name</h3>
+            </div>
+            <div class="inner2">
+                <h1 class="celcius">28°</h1>
+                <div class="cityndtime">
+                    <h3 class="cityname">Bangalore</h3>
+                    <h5 class="crrntime">06:09-Sunday, 21 Oct '24</h5>
+                </div>
+                <div class="weatherimg">
+                    <img class="weathericon" src="images/cloudy.svg" alt="">
+                    <!-- <h4 class="weatherreport">Rainy</h4> -->
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="search">
+                <div class="box1">
+                    <input type="text" placeholder="Enter Your City">
+                    <button><img src="images/search.svg"></button>
+                </div>
+                <div class="box2"></div>
+            </div>
+            <div class="details">
+                <div class="heading">
+                    <h3>Weather Details</h3>
+                </div>
+                <div class="cloudy flat btmspace">
+                    <h4>Weather</h4>
+                    <h4 class="weatherdetail">Cloud</h4>
+                </div>
+                <div class="cloudy flat btmspace">
+                    <h4>Feel's Like</h4>
+                    <h4 class="feeldetail">24 °</h4>
+                </div>
+                <div class="wind flat btmspace">
+                    <h4>Wind</h4>
+                    <h4 class="winddetail">8Km/h</h4>
+                </div>
+                <div class="rain flat btmspace">
+                    <h4>Rain</h4>
+                    <h4 class="raindetail">4mm</h4>
+                </div>
+                <div class="humidity flat btmspace">
+                    <h4>Humidity</h4>
+                    <h4 class="humiddetail">77%</h4>
+                </div>
+                <div class="maxtemp flat btmspace">
+                    <h4>Max Temp</h4>
+                    <h4 class="maxtempdetail">32°</h4>
+                </div>
+                <div class="mintemp flat btmspace">
+                    <h4>Min Temp</h4>
+                    <h4 class="mintempdetail">26°</h4>
+                </div>
+                <div class="line"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
